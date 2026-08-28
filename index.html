@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>P1 Classroom Helpers</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    
+    <header id="header-bar" class="header-bar hidden">
+      <button id="back-btn">⬅ Back to Home</button>
+      <h2 id="screen-title"></h2>
+    </header>
+
+    <main id="home-screen" class="screen active">
+      <h1>Classroom Helpers! 🌟</h1>
+      <p class="subtitle">Click a button below to start learning:</p>
+      
+      <div class="menu-grid">
+        <button class="menu-btn bag-btn" onclick="openModule('bag')">
+          <span class="icon">🎒</span>
+          <span class="btn-text">Pack My Schoolbag</span>
+        </button>
+
+        <button class="menu-btn cubby-btn" onclick="openModule('cubby')">
+          <span class="icon">📁</span>
+          <span class="btn-text">Organize My Cubbyhole</span>
+        </button>
+
+        <button class="menu-btn homework-btn" onclick="openModule('homework')">
+          <span class="icon">📝</span>
+          <span class="btn-text">Pack My Homework</span>
+        </button>
+      </div>
+    </main>
+
+    <section id="bag-screen" class="screen module-screen">
+      </section>
+
+    <section id="cubby-screen" class="screen module-screen">
+      </section>
+
+    <section id="homework-screen" class="screen module-screen">
+      </section>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
